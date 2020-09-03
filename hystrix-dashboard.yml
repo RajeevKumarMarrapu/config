@@ -1,0 +1,8 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+turbine:
+  app-config: library-service
+  cluster-name-expression: new String("default")
